@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("enter the number"))
+        let b=[1,2,3,4,5,6,7,8,9,10]
+        function aa(a){
+            for(let i=0;i<b.length;i++){
+                for(let j=i;j<b.length;j++){
+                    if(a==b[i]+b[j]){
+                        document.write(b[i]+"+"+b[j]+"<br>")
+                    }
+                }
+            }
+        }
+        aa(a)
+    </script>
+</body>
+</html>

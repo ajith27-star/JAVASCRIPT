@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gender= prompt("enter the gender")
+        if(gender=="male"){
+            console.log("you are male")
+            let age=prompt("enter the age")
+            if(age>=12 && age<=18){
+            let blood=Number(prompt("enter the blood level"))
+            if(blood >=13 &&blood <=16){
+                console.log("male blood level is normal")
+            }else{
+                console.log("abnormal")
+            }
+        }
+            else if(age > 18){
+              let blood=Number(prompt("enter the blood level"))
+              if(blood >=13.6 && blood <=17.7){
+                console.log("18 above male blood level is normal")
+            }else{
+                console.log("abnormal")
+            }
+            }
+             
+        }else if(gender=="female"){
+            console.log("you are female")
+            let age=prompt("enter the age")
+            if(age>=12 && age<=18){
+            let blood=Number(prompt("enter the blood level"))
+            if(blood >=12 &&blood <=16){
+                console.log("female blood level is normal")
+            }else{
+                console.log("abnormal")
+            }
+        }
+            else if(age > 18){
+              let blood=Number(prompt("enter the blood level"))
+              if(blood >=12.1 && blood <=15.1){
+                console.log("18 above female blood level is normal")
+            }else{
+                console.log("abnormal")
+            }
+            }
+             
+        }else{
+            console.log("invalid gender")
+        }
+
+
+        
+    </script>
+    
+</body>
+</html>

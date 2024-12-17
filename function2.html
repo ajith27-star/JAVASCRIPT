@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let gender = prompt("enter the gender")
+        let age = Number(prompt("enter the age"))
+        let hemoglobinlevel = Number(prompt("enter the level"))
+        function vasi(gender) {
+            if (gender == "male") {
+                document.write("your male")
+                if (age >= 12 && age <= 18) {
+                    document.write("age correct")
+                    if (hemoglobinlevel >= 12.0 && hemoglobinlevel <= 16.0) {
+                        document.write("hemoglobinlevel is normal")
+                    } else {
+                        document.write("abnormal")
+                    }
+                }
+            
+            else if (age > 18) {
+                document.write("age 18 above is coeerct")
+                if (hemoglobinlevel >= 13.6 && hemoglobinlevel <= 17.7) {
+                    document.write("18 above hemoglobinlevel is normal")
+                } else {
+                    document.write("abnormal")
+                }
+            }
+        }
+        }
+        vasi(gender, age, hemoglobinlevel)
+        </script>
+        
+        
+</body>
+</html>

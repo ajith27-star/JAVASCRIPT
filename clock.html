@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .round {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 50px solid black;
+            background-image: url(https://pptcrafter.wordpress.com/wp-content/uploads/2013/04/simple-5.png);
+            background-color: black;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            align-items: center;
+        }
+        .v1{
+            margin-left: 30%;
+            margin-top: 35%;
+            color: white;
+        }
+        .v2{
+            margin-left: 41%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="round">
+            <h1 class="v1"></h1>
+        </div>
+    </div>
+    <div class="v2">
+        <button style="background-color:white; width: 15%; height: 30px;" onclick="stopst()">stop</button>
+        <button style="background-color: gray; width: 15%; height: 30px;" onclick="startst()">start</button>
+    </div>
+</body>
+<script>
+    let mint =0;
+        let sec =0
+        function time1(){
+            sec++
+            if(sec==60){
+                mint++;
+                sec=0
+            }
+            document.getElementsByTagName('h1')[0].innerHTML=mint+" :  "+sec
+        }            
+
+        let st;
+        let status= false
+        function startst(){
+            if(!status){
+                st=setInterval(time1,100)
+                status=true
+            }
+
+        }
+        function stopst(){
+            clearInterval(st)
+            status= false
+        }
+</script>
+
+</html>

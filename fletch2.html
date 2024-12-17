@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="products">
+
+    </div>
+    <script>
+        fetch("https://api.escuelajs.co/api/v1/categories")
+        .then(a =>a.json())
+        .then(b => {
+            console.log(b)
+            for (let i = 0; i < b.length; i++) {
+                let div = document.createElement('div')
+                let head = document.createElement('h1')
+                    head.textContent = b[i].name;
+
+                    let img= document.createElement('img')
+                    img.src= b[i].image
+
+                    let dec = document.createElement('p')
+                    dec.textContent=b[i].id
+                    div.append(head,dec, img)
+                    document.getElementById('products').append(div)
+            }
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

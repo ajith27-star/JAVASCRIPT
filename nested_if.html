@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gender = prompt("enter the gender")
+        if(gender=="male"){
+            console.log("your male")
+            let age=Number(prompt("enter the age"))
+            if(age>25){
+            console.log("you are eigible for marriage")
+        }else{
+            console.log("not eigible")
+        }
+        }else if(gender=="female"){
+            console.log("your female")
+            let age=Number(prompt("enter the age"))
+            if(age>19){
+            console.log("you are eigible for marriage")
+        }else{
+            console.log("not eigible")
+        }
+        }
+        else{
+            console.log("invalid gender")
+        }
+    </script>
+</body>
+</html>

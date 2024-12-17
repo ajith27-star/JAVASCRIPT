@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products{
+            width: 80%;
+            margin-left: 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        #products div{
+            width: 100%;
+        }
+        #products div img{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="products">
+
+    </div>
+    <script>
+        fetch("https://fakestoreapi.com/products")
+            .then(a => a.json())
+            .then(b => {    mirsuzsdihseufudsy
+                console.log(b)
+                // for (let i = 0; i < b.length; i++) {
+                //     let div = document.createElement('div')
+
+                //     let head = document.createElement('h1')
+                //     head.textContent = b[i].title;
+
+                //     let img= document.createElement('img')
+                //     img.src=b[i].image
+
+                //     let dec = document.createElement('p')
+                //     dec.textContent=b[i].description
+                //     div.append(head,img,dec)
+                //     document.getElementById('products').append(div)
+
+                // }
+
+            })
+
+        // let head =["dom",'bom','java','javaScipt','html and css']
+        // for (let i = 0; i < 5; i++) {
+        //     var h = document.createElement('h1')
+        //     h.textContent = head[i]
+        //     document.getElementsByTagName('body')[0].append(h)
+        // }
+
+
+    </script>
+</body>
+
+</html>
+</body>
+</html>

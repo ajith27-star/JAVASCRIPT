@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        td,tr{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let bike= [{
+        brand:"bajaj",
+        name:"ns160",
+        registernum:"tn42ak4707",
+        model:"2022",
+        price:"160000",
+        color:"white",
+        performance:"40km,1020rpm",
+        bike:function(){
+            return this.bike
+        }},
+        {
+        brand:"hero",
+        name:"xpulse",
+        registernum:"tn42ak5676",
+        model:"2024",
+        price:"170000",
+        color:"green",
+        performance:"30km,1040rpm",
+        bike:function(){
+            return this.bike
+        }}]
+         document.write("<table>")
+        bike.map(i=> document.write("<tr><td>"+i.brand+"<td>"+i.registernum+"</td></td><td>"+i.name+"</td><td>"+i.model+"<td>"+i.price+"</td><td>"+i.color+"<td>"+i.performance+"</td></td></td></tr>"))
+        document.write("</table>")
+
+        </script>
+</body>
+</html>
